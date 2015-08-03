@@ -5,7 +5,7 @@ public class Client {
 	/**
 	  * Identifiant du client.
 	  */
-	private int identifiant;
+	private String identifiant;
 
 	/**
 	  * Nom du client.
@@ -31,7 +31,7 @@ public class Client {
 	  * @param nom du client
 	  * @param prenom du client
 	  */
-	public Client(final int identifiant, final String nom, final String prenom) {
+	public Client(final String identifiant, final String nom, final String prenom) {
 	 this.identifiant = identifiant;
 	 this.nom = nom;
 	 this.prenom = prenom;
@@ -40,14 +40,14 @@ public class Client {
 	/**
 	  * @return the identifiant
 	  */
-	public int getIdentifiant() {
+	public String getIdentifiant() {
 	 return identifiant;
 	}
 
 	/**
 	  * @param identifiant the identifiant to set
 	  */
-	public void setIdentifiant(final int identifiant) {
+	public void setIdentifiant(final String identifiant) {
 	 this.identifiant = identifiant;
 	}
 

@@ -10,7 +10,7 @@ public class RestClient {
 
 	public static void main(String[] args) {
 		final List<Client> clients = new RestTemplate().exchange(
-				"http://localhost:8180/SpringRestWS/client", HttpMethod.GET, null,
+				"http://localhost:8080/SpringRestWS/client", HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Client>>() {
 				}).getBody();
 		System.out.println(new StringBuilder("Taille de la liste : ").append(
